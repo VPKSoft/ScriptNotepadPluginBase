@@ -35,7 +35,7 @@ namespace ScriptNotepadPluginBase.PluginTemplateInterface
     /// <summary>
     /// An interface to write plug-ins for the ScriptNotepad software.
     /// </summary>
-    public interface IScriptNotepadPlugin: IDisposable
+    public interface IScriptNotepadPlugin : IDisposable
     {
         /// <summary>
         /// An event which the plug-in should invoke when the plug-in wants to access the active document of the ScriptNotepad software.
@@ -82,6 +82,16 @@ namespace ScriptNotepadPluginBase.PluginTemplateInterface
         /// The main form of the hosting software (ScriptNotepad).
         /// </summary>
         Form ScriptNotepadMainForm { get; set; }
+
+        /// <summary>
+        /// Gets or sets the tool strip menu item the plug-in constructed.
+        /// </summary>
+        ToolStripMenuItem PluginMenu { get; set; }
+
+        /// <summary>
+        /// Disposes the menu created by the plug-in.
+        /// </summary>
+        void DisposeMenu();
 
         /// <summary>
         /// Gets or sets the current locale for the plug-in.
