@@ -87,6 +87,9 @@ namespace ScriptNotepadPluginBase.About
         {
             try // about dialog shouldn't crash the application
             {
+                // for some reason this uses a different notation for locales..
+                locale = locale.Replace("-", "_");
+
                 ResourceSet rs = Properties.Resources.ResourceManager.GetResourceSet(CultureInfo.InvariantCulture, false, false);
 
                 string langStr = null;

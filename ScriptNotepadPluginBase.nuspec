@@ -10,7 +10,7 @@
     <iconUrl>https://www.vpksoft.net/site/VPKSoft.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Added PluginMenu property and DisposeMenu method to the IScriptNotepadPlugin interface.</releaseNotes>
+    <releaseNotes>Fixed the About dialog's localization.</releaseNotes>
     <copyright>Copyright © 2019 VPKSoft</copyright>
     <tags>plug-in scriptnotepad</tags>
     <license type="expression">MIT</license>
