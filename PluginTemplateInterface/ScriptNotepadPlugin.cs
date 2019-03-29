@@ -46,12 +46,12 @@ namespace ScriptNotepadPluginBase.PluginTemplateInterface
         /// <summary>
         /// Gets or sets the <see cref="MenuStrip"/> which is the main menu of the hosting software (ScriptNotepad).
         /// </summary>
-        internal MenuStrip ScriptNotepadMainMenu { get; set; } = null;
+        public MenuStrip ScriptNotepadMainMenu { get; set; } = null;
 
         /// <summary>
         /// Gets or sets a value indicating whether this <see cref="ScriptNotepadPlugin"/> is initialized <see cref="IScriptNotepadPlugin.Initialize"/>.
         /// </summary>
-        internal bool Initialized { get; set; } = false;
+        public bool Initialized { get; set; } = false;
 
         /// <summary>
         /// Gets a localized message and gets a string corresponding to that message.
