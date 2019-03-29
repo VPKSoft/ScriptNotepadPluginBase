@@ -28,6 +28,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace ScriptNotepadPluginBase.PluginTemplateInterface
 {
@@ -41,6 +42,16 @@ namespace ScriptNotepadPluginBase.PluginTemplateInterface
         /// </summary>
         List<(string MessageName, string Message, string CultureName)> LocalizationTexts { get; set; } = 
             new List<(string MessageName, string Message, string CultureName)>();
+
+        /// <summary>
+        /// Gets or sets the <see cref="MenuStrip"/> which is the main menu of the hosting software (ScriptNotepad).
+        /// </summary>
+        internal MenuStrip ScriptNotepadMainMenu { get; set; } = null;
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="ScriptNotepadPlugin"/> is initialized <see cref="IScriptNotepadPlugin.Initialize"/>.
+        /// </summary>
+        internal bool Initialized { get; set; } = false;
 
         /// <summary>
         /// Gets a localized message and gets a string corresponding to that message.
