@@ -1,0 +1,77 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net47</TargetFramework>
+    <AssemblyTitle>ScriptNotepadPluginBase</AssemblyTitle>
+    <Company>VPKSoft</Company>
+    <Product>ScriptNotepadPluginBase</Product>
+    <Description>A plugin interface for the ScriptNotepad software.</Description>
+    <Copyright>Copyright © 2020 VPKSoft</Copyright>
+    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
+    <DocumentationFile>bin\$(Configuration)\ScriptNotepadPluginBase.xml</DocumentationFile>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <Authors>VPKSoft</Authors>
+    <PackageIconUrl />
+    <PackageProjectUrl>https://www.vpksoft.net/2015-03-31-13-33-28/scriptnotepad</PackageProjectUrl>
+    <PackageReleaseNotes>See: https://github.com/VPKSoft/ScriptNotepad</PackageReleaseNotes>
+    <PackageTags>plug-in scriptnotepad</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>ScriptNotepad_icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/VPKSoft/ScriptNotepadPluginBase</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="ScriptNotepadPluginBase.1.0.0.1.nupkg" />
+    <None Remove="ScriptNotepadPluginBase.1.0.0.2.nupkg" />
+    <None Remove="ScriptNotepadPluginBase.1.0.0.3.nupkg" />
+    <None Remove="ScriptNotepadPluginBase.1.0.0.4.nupkg" />
+    <None Remove="ScriptNotepadPluginBase.1.0.0.5.nupkg" />
+    <None Remove="ScriptNotepadPluginBase.1.0.0.nupkg" />
+    <None Include="ScriptNotepad_icon.png">
+      <Pack>True</Pack>
+      <PackagePath />
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="jacobslusser.ScintillaNET" Version="3.6.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="About\CustomControls\SimpleLinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="About\FormPluginAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="About\FormPluginAbout.Designer.cs">
+      <DependentUpon>FormPluginAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="About\FormPluginAbout.resx">
+      <DependentUpon>FormPluginAbout.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.png" />
+  </ItemGroup>
+</Project>

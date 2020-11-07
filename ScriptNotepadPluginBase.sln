@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.539
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptNotepadPluginBase", "ScriptNotepadPluginBase.csproj", "{B5EB44F1-EAA0-4D75-8627-C8A3D3B78733}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScriptNotepadPluginBase", "ScriptNotepadPluginBase\ScriptNotepadPluginBase.csproj", "{339784C6-4255-49D0-A35D-6A4F14A72261}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScriptNotepadPluginBase.SUO", "ScriptNotepadPluginBase.SUO\ScriptNotepadPluginBase.SUO.csproj", "{D5D02680-D675-4FF4-892B-8414AA126F0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B5EB44F1-EAA0-4D75-8627-C8A3D3B78733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5EB44F1-EAA0-4D75-8627-C8A3D3B78733}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5EB44F1-EAA0-4D75-8627-C8A3D3B78733}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5EB44F1-EAA0-4D75-8627-C8A3D3B78733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{339784C6-4255-49D0-A35D-6A4F14A72261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{339784C6-4255-49D0-A35D-6A4F14A72261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{339784C6-4255-49D0-A35D-6A4F14A72261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{339784C6-4255-49D0-A35D-6A4F14A72261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D02680-D675-4FF4-892B-8414AA126F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D02680-D675-4FF4-892B-8414AA126F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D02680-D675-4FF4-892B-8414AA126F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D02680-D675-4FF4-892B-8414AA126F0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

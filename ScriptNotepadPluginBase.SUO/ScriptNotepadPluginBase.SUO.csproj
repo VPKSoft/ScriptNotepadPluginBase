@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net47</TargetFramework>
+    <AssemblyTitle>ScriptNotepadPluginBase.SUO</AssemblyTitle>
+    <Product>ScriptNotepadPluginBase.SUO</Product>
+    <Copyright>Copyright ©VPKSoft  2020</Copyright>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>1.0.2</Version>
+    <Authors>VPKSoft</Authors>
+    <Description>A plugin interface for the ScriptNotepad software.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://www.vpksoft.net/2015-03-31-13-33-28/scriptnotepad</PackageProjectUrl>
+    <PackageIcon>ScriptNotepad_icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/VPKSoft/ScriptNotepadPluginBase</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>plug-in scriptnotepad</PackageTags>
+    <PackageReleaseNotes>See: https://github.com/VPKSoft/ScriptNotepad</PackageReleaseNotes>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\ScriptNotepadPluginBase\About\CustomControls\SimpleLinkLabel.cs" Link="About\CustomControls\SimpleLinkLabel.cs" />
+    <Compile Include="..\ScriptNotepadPluginBase\About\CustomControls\SimpleLinkLabel.Designer.cs" Link="About\CustomControls\SimpleLinkLabel.Designer.cs" />
+    <Compile Include="..\ScriptNotepadPluginBase\About\FormPluginAbout.cs" Link="About\FormPluginAbout.cs" />
+    <Compile Include="..\ScriptNotepadPluginBase\About\FormPluginAbout.Designer.cs" Link="About\FormPluginAbout.Designer.cs" />
+    <Compile Include="..\ScriptNotepadPluginBase\EventArgClasses\RequestScintillaDocumentEventArgs.cs" Link="EventArgClasses\RequestScintillaDocumentEventArgs.cs" />
+    <Compile Include="..\ScriptNotepadPluginBase\PluginTemplateInterface\IScriptNotepadPlugin.cs" Link="PluginTemplateInterface\IScriptNotepadPlugin.cs" />
+    <Compile Include="..\ScriptNotepadPluginBase\PluginTemplateInterface\ScriptNotepadPlugin.cs" Link="PluginTemplateInterface\ScriptNotepadPlugin.cs" />
+    <Compile Include="..\ScriptNotepadPluginBase\Properties\Resources.Designer.cs" Link="Properties\Resources.Designer.cs" />
+    <Compile Include="..\ScriptNotepadPluginBase\Types\DelegateTypes.cs" Link="Types\DelegateTypes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\ScriptNotepadPluginBase\Resources\OK.png" Link="Resources\OK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\ScriptNotepadPluginBase\About\FormPluginAbout.resx" Link="About\FormPluginAbout.resx" />
+    <EmbeddedResource Include="..\ScriptNotepadPluginBase\Properties\Resources.resx" Link="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ScriptNotepadPluginBase\ScriptNotepad_icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="About\CustomControls\" />
+    <Folder Include="EventArgClasses\" />
+    <Folder Include="Types\" />
+    <Folder Include="Resources\" />
+    <Folder Include="PluginTemplateInterface\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="unofficial.ScintillaNET" Version="3.6.51" />
+  </ItemGroup>
+</Project>

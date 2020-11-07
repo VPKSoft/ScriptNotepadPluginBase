@@ -1,0 +1,8 @@
+C:\Files\GitHub\ScriptNotepadPluginBase\ScriptNotepadPluginBase.SUO\obj\Debug\net40\ScriptNotepadPluginBase.SUO.csprojAssemblyReference.cache
+C:\Files\GitHub\ScriptNotepadPluginBase\ScriptNotepadPluginBase.SUO\obj\Debug\net40\ScriptNotepadPluginBase.SUO.About.FormPluginAbout.resources
+C:\Files\GitHub\ScriptNotepadPluginBase\ScriptNotepadPluginBase.SUO\obj\Debug\net40\ScriptNotepadPluginBase.SUO.Properties.Resources.resources
+C:\Files\GitHub\ScriptNotepadPluginBase\ScriptNotepadPluginBase.SUO\obj\Debug\net40\ScriptNotepadPluginBase.SUO.csproj.GenerateResource.cache
+C:\Files\GitHub\ScriptNotepadPluginBase\ScriptNotepadPluginBase.SUO\obj\Debug\net40\ScriptNotepadPluginBase.SUO.AssemblyInfoInputs.cache
+C:\Files\GitHub\ScriptNotepadPluginBase\ScriptNotepadPluginBase.SUO\obj\Debug\net40\ScriptNotepadPluginBase.SUO.AssemblyInfo.cs
+C:\Files\GitHub\ScriptNotepadPluginBase\ScriptNotepadPluginBase.SUO\obj\Debug\net40\ScriptNotepadPluginBase.SUO.csproj.CoreCompileInputs.cache
+C:\Files\GitHub\ScriptNotepadPluginBase\ScriptNotepadPluginBase.SUO\bin\Debug\net40\ScriptNotepadPluginBase.SUO.dll
