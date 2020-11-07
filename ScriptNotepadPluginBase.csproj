@@ -14,7 +14,7 @@
     <Authors>VPKSoft</Authors>
     <PackageIconUrl></PackageIconUrl>
     <PackageProjectUrl>https://www.vpksoft.net/2015-03-31-13-33-28/scriptnotepad</PackageProjectUrl>
-    <PackageReleaseNotes>Changed few field from internal to public.</PackageReleaseNotes>
+    <PackageReleaseNotes>See: https://github.com/VPKSoft/ScriptNotepad</PackageReleaseNotes>
     <PackageTags>plug-in scriptnotepad</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>ScriptNotepad_icon.png</PackageIcon>
