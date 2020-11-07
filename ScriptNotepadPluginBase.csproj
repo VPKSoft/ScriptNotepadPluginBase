@@ -1,86 +1,75 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B5EB44F1-EAA0-4D75-8627-C8A3D3B78733}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ScriptNotepadPluginBase</RootNamespace>
-    <AssemblyName>ScriptNotepadPluginBase</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
+    <TargetFramework>net47</TargetFramework>
+    <AssemblyTitle>ScriptNotepadPluginBase</AssemblyTitle>
+    <Company>VPKSoft</Company>
+    <Product>ScriptNotepadPluginBase</Product>
+    <Description>A plugin interface for the ScriptNotepad software.</Description>
+    <Copyright>Copyright © 2019 VPKSoft</Copyright>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <DocumentationFile>bin\$(Configuration)\ScriptNotepadPluginBase.xml</DocumentationFile>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <Authors>VPKSoft</Authors>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageProjectUrl>https://www.vpksoft.net/2015-03-31-13-33-28/scriptnotepad</PackageProjectUrl>
+    <PackageReleaseNotes>Changed few field from internal to public.</PackageReleaseNotes>
+    <PackageTags>plug-in scriptnotepad</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>ScriptNotepad_icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/VPKSoft/ScriptNotepadPluginBase</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\ScriptNotepadPluginBase.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\ScriptNotepadPluginBase.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\jacobslusser.ScintillaNET.3.6.3\lib\net40\ScintillaNET.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
+    <None Remove="ScriptNotepadPluginBase.1.0.0.1.nupkg" />
+    <None Remove="ScriptNotepadPluginBase.1.0.0.2.nupkg" />
+    <None Remove="ScriptNotepadPluginBase.1.0.0.3.nupkg" />
+    <None Remove="ScriptNotepadPluginBase.1.0.0.4.nupkg" />
+    <None Remove="ScriptNotepadPluginBase.1.0.0.5.nupkg" />
+    <None Remove="ScriptNotepadPluginBase.1.0.0.nupkg" />
+    <None Include="ScriptNotepad_icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About\CustomControls\SimpleLinkLabel.cs">
+    <PackageReference Include="jacobslusser.ScintillaNET" Version="3.6.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="About\CustomControls\SimpleLinkLabel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="About\CustomControls\SimpleLinkLabel.Designer.cs" />
-    <Compile Include="About\FormPluginAbout.cs">
+    <Compile Update="About\FormPluginAbout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="About\FormPluginAbout.Designer.cs">
+    <Compile Update="About\FormPluginAbout.Designer.cs">
       <DependentUpon>FormPluginAbout.cs</DependentUpon>
     </Compile>
-    <Compile Include="EventArgClasses\RequestScintillaDocumentEventArgs.cs" />
-    <Compile Include="PluginTemplateInterface\IScriptNotepadPlugin.cs" />
-    <Compile Include="PluginTemplateInterface\ScriptNotepadPlugin.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
+    <Compile Update="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Types\DelegateTypes.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="About\FormPluginAbout.resx">
+    <EmbeddedResource Update="About\FormPluginAbout.resx">
       <DependentUpon>FormPluginAbout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
     <None Include="Resources\OK.png" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
