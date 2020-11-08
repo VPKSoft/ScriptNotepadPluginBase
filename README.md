@@ -8,4 +8,8 @@ The SUO stands for [unofficial.ScintillaNET](https://www.nuget.org/packages/unof
 
 ### Thanks to
 * [JetBrains](https://www.jetbrains.com/?from=ScriptNotepadPluginBase) for their open source license(s).
-* [![VPKSoft](https://circleci.com/gh/VPKSoft/ScriptNotepadPluginBase.svg?style=shield)](https://app.circleci.com/pipelines/github/VPKSoft/VScriptNotepadPluginBase) 
+* [![VPKSoft](https://circleci.com/gh/VPKSoft/ScriptNotepadPluginBase.svg?style=shield)](https://app.circleci.com/pipelines/github/VPKSoft/ScriptNotepadPluginBase) 
+
+[![JetBrains](http://www.vpksoft.net/site/External/JetBrains/jetbrains.svg)](https://www.jetbrains.com/?from=ScriptNotepadPluginBase)
+
+
