@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net47</TargetFramework>
+    <TargetFrameworks>netcoreapp3.1;net5.0-windows;net47</TargetFrameworks>
     <AssemblyTitle>ScriptNotepadPluginBase.SUO</AssemblyTitle>
     <Product>ScriptNotepadPluginBase.SUO</Product>
-    <Copyright>Copyright ©VPKSoft  2020</Copyright>
+    <Copyright>Copyright ©VPKSoft  2021</Copyright>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>VPKSoft</Authors>
     <Description>A plugin interface for the ScriptNotepad software.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -17,12 +17,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>plug-in scriptnotepad</PackageTags>
     <PackageReleaseNotes>See: https://github.com/VPKSoft/ScriptNotepad</PackageReleaseNotes>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugType>full</DebugType>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\ScriptNotepadPluginBase\About\CustomControls\SimpleLinkLabel.cs" Link="About\CustomControls\SimpleLinkLabel.cs" />
@@ -42,7 +37,7 @@
     <EmbeddedResource Include="..\ScriptNotepadPluginBase\About\FormPluginAbout.resx" Link="About\FormPluginAbout.resx" />
     <EmbeddedResource Include="..\ScriptNotepadPluginBase\Properties\Resources.resx" Link="Properties\Resources.resx" />
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net47' ">
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Windows.Forms" />
@@ -61,6 +56,6 @@
     <Folder Include="PluginTemplateInterface\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="unofficial.ScintillaNET" Version="3.6.51" />
+    <PackageReference Include="unofficial.ScintillaNET" Version="3.8.1" />
   </ItemGroup>
 </Project>
