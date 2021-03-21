@@ -190,7 +190,7 @@ namespace ScriptNotepadPluginBase.About
                         return titleAttribute.Title;
                     }
                 }
-                return System.IO.Path.GetFileNameWithoutExtension(aboutAssembly.CodeBase);
+                return System.IO.Path.GetFileNameWithoutExtension(aboutAssembly.Location);
             }
         }
 
