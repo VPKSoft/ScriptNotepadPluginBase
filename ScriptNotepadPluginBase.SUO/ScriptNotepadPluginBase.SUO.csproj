@@ -57,6 +57,6 @@
     <Folder Include="PluginTemplateInterface\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="unofficial.ScintillaNET" Version="3.8.5" />
+    <PackageReference Include="unofficial.ScintillaNET" Version="3.8.6" />
   </ItemGroup>
 </Project>
