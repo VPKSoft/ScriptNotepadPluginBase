@@ -20,7 +20,7 @@ jobs:
     env:
       Solution_Name: ScriptNotepadPluginBase.sln
       App_Project_Directory_1: ScriptNotepadPluginBase
-      App_Project_Path_1: ScriptNotepadPluginBase\VScriptNotepadPluginBase.csproj
+      App_Project_Path_1: ScriptNotepadPluginBase\ScriptNotepadPluginBase.csproj
 
       App_Project_Directory_2: ScriptNotepadPluginBase.NET
       App_Project_Path_2: ScriptNotepadPluginBase.NET\ScriptNotepadPluginBase.NET.csproj
