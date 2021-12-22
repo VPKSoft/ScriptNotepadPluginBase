@@ -74,7 +74,7 @@ jobs:
       if: ${{ github.event_name != 'pull_request' }}
       run: |
         $currentDirectory = Get-Location
-        $files = Get-ChildItem $currentDirectory -r -Filter *VPKSoft.ScintillaLexers*.nupkg # use the mask to discard possible third party packages..
+        $files = Get-ChildItem $currentDirectory -r -Filter *ScriptNotepadPluginBase*.nupkg # use the mask to discard possible third party packages..
 
         Write-Output $files.Count
 
