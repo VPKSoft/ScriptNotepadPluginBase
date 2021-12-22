@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netcoreapp3.1;net5.0-windows;net47</TargetFrameworks>
-    <AssemblyTitle>ScriptNotepadPluginBase.SUO</AssemblyTitle>
-    <Product>ScriptNotepadPluginBase.SUO</Product>
+    <AssemblyTitle>ScriptNotepadPluginBase.NET</AssemblyTitle>
+    <Product>ScriptNotepadPluginBase.NET</Product>
     <Copyright>Copyright ©VPKSoft 2021</Copyright>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>1.0.5</Version>
+    <Version>1.0.6</Version>
     <Authors>VPKSoft</Authors>
     <Description>A plugin interface for the ScriptNotepad software.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -18,7 +18,7 @@
     <PackageTags>plug-in scriptnotepad</PackageTags>
     <PackageReleaseNotes>See: https://github.com/VPKSoft/ScriptNotepad</PackageReleaseNotes>
     <UseWindowsForms>true</UseWindowsForms>
-    <AssemblyVersion>1.0.5.0</AssemblyVersion>
+    <AssemblyVersion>1.0.6</AssemblyVersion>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\ScriptNotepadPluginBase\About\CustomControls\SimpleLinkLabel.cs" Link="About\CustomControls\SimpleLinkLabel.cs" />
@@ -57,6 +57,6 @@
     <Folder Include="PluginTemplateInterface\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="unofficial.ScintillaNET" Version="3.8.7" />
+    <PackageReference Include="Scintilla.NET" Version="5.1.5" />
   </ItemGroup>
 </Project>
