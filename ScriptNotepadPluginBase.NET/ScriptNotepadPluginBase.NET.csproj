@@ -7,7 +7,7 @@
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>1.0.8</Version>
+    <Version>1.0.9</Version>
     <Authors>VPKSoft</Authors>
     <Description>A plugin interface for the ScriptNotepad software.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -56,6 +56,6 @@
     <Folder Include="PluginTemplateInterface\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Scintilla.NET" Version="5.1.5.3" />
+    <PackageReference Include="Scintilla.NET" Version="5.1.5.4" />
   </ItemGroup>
 </Project>
