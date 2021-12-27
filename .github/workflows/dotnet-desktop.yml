@@ -19,11 +19,8 @@ jobs:
 
     env:
       Solution_Name: ScriptNotepadPluginBase.sln
-      App_Project_Directory_1: ScriptNotepadPluginBase
-      App_Project_Path_1: ScriptNotepadPluginBase\ScriptNotepadPluginBase.csproj
-
-      App_Project_Directory_2: ScriptNotepadPluginBase.NET
-      App_Project_Path_2: ScriptNotepadPluginBase.NET\ScriptNotepadPluginBase.NET.csproj
+      App_Project_Directory: ScriptNotepadPluginBase.NET
+      App_Project_Path: ScriptNotepadPluginBase.NET\ScriptNotepadPluginBase.NET.csproj
 
       NUGET_APIKEY: ${{ secrets.NUGET_APIKEY }}
       NUGETAPI: ${{ secrets.NUGETAPI }}      
@@ -53,14 +50,9 @@ jobs:
       env:
         Configuration: ${{ matrix.configuration }}
 
-    # Create theScriptNotepadPluginBase app package by building and packaging the NuGet
-    - name: Create the ScriptNotepadPluginBase NuGet package
-      run: msbuild $env:App_Project_Path_1 /p:Configuration=$env:Configuration
-
-
     # Create the ScriptNotepadPluginBase.NET app package by building and packaging the NuGet
     - name: Create the ScriptNotepadPluginBase.NET NuGet package
-      run: msbuild $env:App_Project_Path_2 /p:Configuration=$env:Configuration
+      run: msbuild $env:App_Project_Path /p:Configuration=$env:Configuration
 
     - name: Decode nuget.config
       if: ${{ github.event_name != 'pull_request' }}

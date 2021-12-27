@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScriptNotepadPluginBase", "ScriptNotepadPluginBase\ScriptNotepadPluginBase.csproj", "{339784C6-4255-49D0-A35D-6A4F14A72261}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScriptNotepadPluginBase.NET", "ScriptNotepadPluginBase.NET\ScriptNotepadPluginBase.NET.csproj", "{AAD1B9C7-B703-45F3-A773-C92869E6C9F0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BB77AB5C-E6F5-4E29-9F94-47554976AD46}"
@@ -18,10 +16,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{339784C6-4255-49D0-A35D-6A4F14A72261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{339784C6-4255-49D0-A35D-6A4F14A72261}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{339784C6-4255-49D0-A35D-6A4F14A72261}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{339784C6-4255-49D0-A35D-6A4F14A72261}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AAD1B9C7-B703-45F3-A773-C92869E6C9F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AAD1B9C7-B703-45F3-A773-C92869E6C9F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAD1B9C7-B703-45F3-A773-C92869E6C9F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
